@@ -8,7 +8,7 @@ import {useRef , forwardRef , useImperativeHandle} from 'react'
 // Dimensiones del vehículo
 function ModelCar(props, ref) {
     // Cargar el modelo del coche
-  const mesh = useGLTF('/public assets/Car2.glb');
+  const mesh = useGLTF('/public/Car2.glb');
 
   const width = 1.5;
   const height = 0.5;
@@ -78,4 +78,4 @@ function ModelCar(props, ref) {
 
 export default forwardRef(ModelCar);
 // Precargar el modelo
-useGLTF.preload('/public assets/Car2.glb');
+useGLTF.preload('/public/Car2.glb');

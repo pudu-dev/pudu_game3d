@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useMemo } from "react";
 
 export default function Ramp() {
-  const { scene } = useGLTF("/public assets/Ramp.glb");
+  const { scene } = useGLTF("/public/Ramp.glb");
   const geometry = scene.children[0].geometry;
 
 

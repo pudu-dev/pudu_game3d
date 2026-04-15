@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { useBox } from '@react-three/cannon'
 
 export default function Modelsun() {
-  const model = useGLTF('/public assets/Sun.glb') // ruta relativa a "public"
+  const model = useGLTF('/public/Sun.glb') // ruta relativa a "public"
   // Caja física estática como colisión general del terreno
   const [ref] = useBox(() => ({
     type: 'Static',
@@ -14,4 +14,4 @@ export default function Modelsun() {
 }
 
 // Precargar
-useGLTF.preload('/public assets/Sun.glb');
+useGLTF.preload('/public/Sun.glb');

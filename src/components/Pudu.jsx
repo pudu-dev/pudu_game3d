@@ -5,7 +5,7 @@ import { useMemo } from 'react'
 
 
 export default function ModelPudu({position=[0,0,0], rotation=[0,0,0] }) {
-    const gltf = useGLTF('/public assets/Pudu.glb')
+    const gltf = useGLTF('/public/Pudu.glb')
 
       // Clonamos el modelo por instancia (muy importante)
     const clonedScene = useMemo(() => clone(gltf.scene), [gltf.scene])
@@ -34,4 +34,4 @@ export default function ModelPudu({position=[0,0,0], rotation=[0,0,0] }) {
 
 }
 // Precargar
-useGLTF.preload('/public assets/Pudu.glb');
+useGLTF.preload('/public/Pudu.glb');

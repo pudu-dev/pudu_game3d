@@ -17,7 +17,7 @@ function CollisionMesh({ geometry, position, rotation }) {
 }
 
 export default function ModelMap() {
-  const { scene } = useGLTF("/public assets/Map3.glb");
+  const { scene } = useGLTF("/public/Map3.glb");
   const scaleFactor = 50;
 
   const [collisionMeshes, setCollisionMeshes] = useState([]);
@@ -64,4 +64,4 @@ export default function ModelMap() {
   );
 }
 
-useGLTF.preload("/public assets/Map3.glb");
+useGLTF.preload("/public/Map3.glb");
