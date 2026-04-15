@@ -109,7 +109,7 @@ export default function CanvasFiber() {
       <Canvas id = "canvas"  camera ={{ position: [0, 0, 0], fov:60}} > {/* X(W) , Y(H) , Z(DETRAS) */}
 
           {/* Entorno HDR ["sunset", "dawn", "night", "warehouse", "forest", "apartment", "studio", "city", "park", "lobby"]*/}
-          <Environment preset="night" background={false} />
+          {/* <Environment preset="night" background={false} /> */}
           {/*Iluminacion de la escena*/}
           <ambientLight intensity={0.5} />
           <directionalLight position={[-25, 10, 100]} />
